@@ -1,0 +1,105 @@
+*,
+*,
+::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar
+/* custom colours */
+
+:root {
+    --primary: rgb(0, 0, 0);
+    --secondary: white;
+    --alternative: darkolivegreen;
+    --bgCAbout: #56744E;
+    --mainBox-shadow: .2rem .2rem .1rem .2rem rgba(105, 96, 96, 0.75);
+    --card-box-shadow: .5vw .5vw 1vw rgba(85, 94, 9,=9, 0.9);
+    --text-shadow: .3ren .3rem .4rem rgba(78, 107, 91, 0.5);
+    --mainBg: hsla(145, 83%, 20%, 0.39);
+    --bgImg: linear-gradient(to right, var(--awesome), var(--mainBg))
+}
+
+@property --top-left {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --top-right {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --bottom-right {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+
+@property --bottom-left {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+
+/* navbar*/
+
+.img[alt='logo'] {
+    width: 10rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.navbar-brand {
+    width: 10rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* navbar and footer */
+:is(nav, footer) {
+    background-color: blueviolet;
+}
+
+:is(a) {
+    color: blueviolet !important;
+}
+
+:is(.nav-link) {
+    color: blueviolet;
+}
+/* Grid Layout & 3 rows */
+:is(body) {
+    display: grid;
+    text-align: center;
+}
+
+/* Create three rows */
+:is(body) {
+    grid-template-rows: auto minmax(100%, 100dvh) auto;   
+}
+
+.nav-item {
+    transition: all .5s;
+    &:hover {
+        transform: scale(1.2);
+    text-decoration: underline;
+    }
+}
+
+.navbar-brand {
+    transition: all .5s;
+    &:hover {
+        transform: scale(1.2);
+    text-decoration: underline;
+    }
+}
