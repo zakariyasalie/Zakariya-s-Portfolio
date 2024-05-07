@@ -21,7 +21,7 @@
     --mainBg: hsla(145, 83%, 20%, 0.39);
     --bgImg: linear-gradient(to right, var(--awesome), var(--mainBg))
 }
-
+/* 
 @property --top-left {
     syntax: "<percentage>";
     inherits: false;
@@ -44,19 +44,9 @@
     syntax: "<percentage>";
     inherits: false;
     initial-value: 0%;
-}
+} */
 
 /* navbar*/
-
-.img[alt='logo'] {
-    width: 10rem;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    object-position: center;
-    &:hover {
-        transform: scale(1.2);
-    }
-}
 
 .navbar-brand {
     width: 10rem;
@@ -66,7 +56,7 @@
 }
 
 /* navbar and footer */
-:is(nav, footer) {
+:is(footer) {
     background-color: blueviolet;
 }
 
@@ -102,4 +92,40 @@
         transform: scale(1.2);
     text-decoration: underline;
     }
+}
+
+/* .row-1 {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+} */
+
+.header {
+    padding: 20px; Example padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: blueviolet;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-image {
+    width: auto;
+}
+.header-text {
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline;
+}
+
+.body {
+    background-color: black;
 }
