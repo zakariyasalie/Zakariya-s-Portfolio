@@ -8,20 +8,6 @@
 }
 
 ::-webkit-scrollbar
-/* custom colours */
-
-:root {
-    --primary: rgb(0, 0, 0);
-    --secondary: white;
-    --alternative: darkolivegreen;
-    --bgCAbout: #56744E;
-    --mainBox-shadow: .2rem .2rem .1rem .2rem rgba(105, 96, 96, 0.75);
-    --card-box-shadow: .5vw .5vw 1vw rgba(85, 94, 9,=9, 0.9);
-    --text-shadow: .3ren .3rem .4rem rgba(78, 107, 91, 0.5);
-    --mainBg: hsla(145, 83%, 20%, 0.39);
-    --bgImg: linear-gradient(to right, var(--awesome), var(--mainBg))
-}
-
 
 .navbar-brand {
     width: 10rem;
@@ -214,5 +200,24 @@
       width: 0;
       height: auto;
       @include transition($transition-collapse-width);
+    }
+  }
+
+  .accordion-body {
+    color: blueviolet;
+  }
+
+  .accordion-button {
+    background-color: transparent;
+    color: green !important;
+    box-shadow: green;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+    border-radius: 20px;
+    &:hover {
+        box-shadow: unset;
+        border: 2px solid blueviolet;
+        color: green;
     }
   }
