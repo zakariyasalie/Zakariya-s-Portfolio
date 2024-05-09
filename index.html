@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Zakariya's Portfolio</title>
 </head>
-<!-- this is a random comment -->
 
 <body class="body">
 
-    <!-- Navbar -->
+    <!-- My Navbar -->
     <nav class="navbar navbar-light bg-light sticky-top">
         <div class="container-fluid justify-content-between">
             <img src="./images/logo1.png"
@@ -28,6 +27,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link me-5" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-5" href="#Resume">Resume</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link me-5" href="#Skills">Skills</a>
@@ -55,7 +57,9 @@
 
 
     <main class="container-fluid" >
-        <header class="header">
+        <!-- My Landing Page -->
+        <section id="home">
+        <header class="header" >
             <div class="header-content">
                 <img src="./images/img1.jpg" alt="Image" class="header-image" width="250" height="250">
                 <div class="header-text">
@@ -64,8 +68,11 @@
                 </div>
             </div>
         </header>
+        </section>
+
+         <!-- about-me -->
             <section class="about-me py-5 mt-5">
-                <div id="about" class="container">
+                <section id="about" class="container">
                   <div class="row">
                     <div class="col-12 text-center">
                       <h2 class="text-uppercase mb-4 about-me-title" id="about-me-heading">About me</h2>
@@ -100,94 +107,250 @@
                       </div>
                     </div>
                   </div>
-
-    <secion class="container">
-        <h1 class="title text-light">Resume</h1>
-            <div class="container text-center">
-                <div class="row">
-                  <div class="col-6">
-                    <h3 class="heading1 text-light">Education</h3>
-                    <p class="d-inline-flex gap-1">
-                        <a class="btn btn-light text-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          Rondebosch Boys High School
-                        </a>
-                      </p>
-                      <div class="collapse" id="collapseExample">
-                        <div class="card card-body ">
-                         <p>
-                            I matriculated at Rondebosch Boys High School in 2022. I made history that year by being the first student to ever be accepted into RBHS for soley grade 12.
-                         </p>
-                         <h5>Subjects</h5>
-                         <p>English</p>
-                         <p>Mathematics</p>
-                         <p>Physical Sciences</p>
-                         <p>Engineering and Graphic Designing</p>
-                         <p>Life Orientation</p>
-                         <p>Afrkiaans</p>
-                         <p>Life Sciences</p>
+                </section>
+                </section>
+<!-- My Resume -->
+                <section id="resume" class="text-light">
+                    <div class="container text-center">
+                      <h2 class="text-uppercase mb-4 about-me-title">My Resume</h2>
+                        <div class="row">
+                            <div class="col">
+                                <h3>Education:</h3>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item bg-transparent">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseD1" aria-expanded="true" aria-controls="collapseD1">
+                                          Rondebosch Boys High School
+                                        </button>
+                                      </h2>
+                                      <div id="collapseD1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <h6>Subjects</h6>
+                                            <ul>
+                                                <li>Mathematics</li>
+                                                <li>English</li>
+                                                <li>Afrikaans</li>
+                                                <li>Physics</li>
+                                                <li>Engineering and Graphic Designing</li>
+                                                <li>Life Sciences</li>
+                                                <li>Life Orientation</li>
+                                              </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <class class="col">
+                                <h3>Work Experience:</h3>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item bg-transparent">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          iStore Canal Walk
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        <h6>iStore Sales Consultant </h6>
+                                        <ul>
+                                            <li>Engaging with customers and selling the idea of the product was bulk of the job.</li>
+                                            <li>I had to ensure my work area, as well as myself, was prim and proper.</li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item bg-transparent">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Life Choices
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                         <h6>Life Choices Academy - Internship (2024)</h6>
+                                         <ul>
+                                            <li>Learning The basics of software development.</li>
+                                            <li>Compiling job cards for manufacturing of job.</li>
+                                            <li>Daily analysis of Work in Progress production scheduling.</li>
+                                            <li>Planning production schedule with factory manager to ensure that lead times are achieved.</li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </class>
                         </div>
-                      </div>
-                  </div>
-                  <p>
-                    <button class="btn2 btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                      Islamia College
-                    </button>
-                  </p>
-                  <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                      <div class="card card-body" style="width: 300px;">
-                        This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
-                      </div>
                     </div>
-                  </div>
+                </section>
+    <!-- My Skills -->
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <section>
+            <h2 class="text-uppercase mb-4 about-me-title">My Skills</h2>
+        </section>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner"><!--The Carousel Container-->
+              <div class="carousel-item active"><!--The Carousel Slider-->
+                <aside class="card team1">
+                    <img src="./images/HTML.png" alt="HTML" class="width: 100px;">
+                    <h2 class="name">HTML</h2>
+                </aside>
+              </div>
+              <div class="carousel-item">
+                <aside class="card team1">
+                    <img src="./images/CSS.png" alt="CSS">
+                    <h2 class="name">CSS</h2>
+                </aside>
+              </div>
+              <div class="carousel-item">
+                <aside class="card team1">
+                  <img src="./images/Bootstrap.png" alt="BOOT">
+                  <h2 class="name">bootstrap</h2>
+                </aside>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <i class="fa-solid fa-arrow-left"></i>
+              <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <i class="fa-solid fa-arrow-right"></i>
+              <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
 
-                  <div class="col">
-                    <h3 class="heading2 text-light">Work experience</h3>
-                  </div>
+    <!-- Testimonials -->
+    <secion class="container">
+        <div class="row" id="Testimonials">
+            <div class="card" style="width: 18rem;">
+                <img src="./images/auntysheeta.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
                 </div>
               </div>
+              <div class="card" style="width: 18rem;">
+                <img src="./images/terrorist.jpg" class="card-img-top" alt="Mo">
+                <div class="card-body">
+                  <p class="card-text">
+                    Zakariya Salie shines as a versatile figure in web development and team dynamics. His intelligence drives innovative solutions and project success, while his humor adds a delightful touch to interactions. Renowned for his work ethic and dedication, Zakariya inspires colleagues with his helpfulness and expertise. In summary, he is an invaluable asset, embodying talent, humor, and determination.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="./images/n!gg3rs.jpg" class="card-img-top" alt="Azhar">
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="./images/amy.jpg" class="card-img-top" alt="Amy">
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="min-height: fit-content; width: 18rem;">
+                <img src="./images/joel2.jpg" class="card-img-top" alt="Joel">
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+        </div>
     </secion>
 
-    <secion class="container">
+    <!-- My Projects -->
+    <secion class="container" id="Projects">
         <div class="row">
+            
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
 
         </div>
-        <p>
-        </p>
     </secion>
 
-    <secion class="container">
-        <div class="row">
-
-        </div>
-    </secion>
-
-    <secion class="container">
-        <div class="row">
-
-        </div>
-    </secion>
-
-    <secion class="container">
-        <div class="row">
-
-        </div>
-    </secion>
-
-    <secion class="container">
-        <div class="row">
-
+    <!-- Contact Me -->
+    <secion id="Reach me" class="container">
+        <div class="row col-6">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Your Email</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insert email here">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Email Subject</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Please enter email subject here">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Type below</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="please type your email here...">
+              </div>
         </div>
     </secion>
     </main>
 
+    <!-- Footer -->
     <footer id="footer" class="container-fluid fixed-bottom">
        
         <div class="row">
        
         <p class="lead text-white">
 
-            <span class="shadow">Wasa's Portfolio</span>
+            <span class="shadow">Zakariya's Portfolio</span>
                 
             <span>&copy; 2024</span>
         </p>
